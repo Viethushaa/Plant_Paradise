@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Plant Paradise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- ✅ HEADER & NAVIGATION -->
+    <header class="bg-green-600 text-white">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Plant Paradise</h1>
+            <nav class="hidden md:flex space-x-8 bg-gradient-to-r from-green-700 to-green-900 p-4 rounded-lg shadow-lg">
+                <a href="index.html" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">Home</a>
+                <a href="shop.html" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">Shop</a>
+                <a href="#about" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">About</a>
+                <a href="#contact" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">Contact</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden md:hidden bg-green-700 text-white py-2">
+            <a href="index.html" class="block text-center py-2 hover:bg-green-500">Home</a>
+            <a href="shop.html" class="block text-center py-2 hover:bg-green-500">Shop</a>
+            <a href="#about" class="block text-center py-2 hover:bg-green-500">About</a>
+            <a href="#contact" class="block text-center py-2 hover:bg-green-500">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ✅ SHOP SECTION (Only the Products) -->
+    <section id="shop" class="container mx-auto px-6 py-16 text-center">
+        <h2 class="text-3xl font-bold text-green-600">Best Selling Plants</h2>
+        <div class="grid md:grid-cols-3 gap-6 mt-8">
+            <!-- Product 1 -->
+            <div class="relative bg-white p-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:bg-green-100 hover:shadow-lg group">
+                <img src="images/image1.jpg" class="w-full h-48 object-cover rounded-lg">
+                <h3 class="text-lg font-semibold mt-4">Aloe Vera</h3>
+                <p class="text-green-600 font-bold">Rs.1200</p>
+                <div class="text-yellow-500 mt-2">⭐⭐⭐⭐⭐</div>
+                <button onclick="redirectToPayment('Aloe Vera', 1200)" class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+                    Buy Now
+                </button>
+            
+                <!-- 🔹 Pop-up on hover -->
+                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-48 bg-green-600 text-white text-sm text-center p-2 rounded-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    Aloe Vera is known for its healing properties!
+                </div>
+            </div>
+            
+
+            <!-- Product 2 -->
+            <div class="relative bg-white p-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:bg-green-100 hover:shadow-lg group">
+                <img src="images/image2.jpg" class="w-full h-48 object-cover rounded-lg">
+                <h3 class="text-lg font-semibold mt-4">Snake Plant</h3>
+                <p class="text-green-600 font-bold">Rs.1300</p>
+                <div class="text-yellow-500 mt-2">⭐⭐⭐⭐☆</div>
+                <button onclick="redirectToPayment('Snake Plant', 1300)" class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+                    Buy Now
+                </button>
+            
+                <!-- 🔹 Pop-up on hover -->
+                <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-48 bg-green-600 text-white text-sm text-center p-2 rounded-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    The Snake Plant is an excellent air purifier!
+                </div>
+            </div>
+            
+
+            <!-- Product 3 -->
+                <div class="relative bg-white p-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:bg-green-100 hover:shadow-lg group">
+                    <img src="images/image3.jpeg" class="w-full h-48 object-cover rounded-lg">
+                    <h3 class="text-lg font-semibold mt-4">Peace Lily</h3>
+                    <p class="text-green-600 font-bold">Rs.1500</p>
+                    <div class="text-yellow-500 mt-2">⭐⭐⭐⭐⭐</div>
+                    <button onclick="redirectToPayment('Peace Lily', 1500)" class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+                        Buy Now
+                    </button>
+
+                    <!-- 🔹 Pop-up on hover -->
+                    <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-48 bg-green-600 text-white text-sm text-center p-2 rounded-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        Peace Lily is known for its air-purifying qualities!
+                    </div>
+                </div>
+
+
+           <!-- Product 4 -->
+                <div class="relative bg-white p-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:bg-green-100 hover:shadow-lg group">
+                    <img src="images/image4.jpg" class="w-full h-48 object-cover rounded-lg">
+                    <h3 class="text-lg font-semibold mt-4">Spider Plant</h3>
+                    <p class="text-green-600 font-bold">Rs.1450</p>
+                    <div class="text-yellow-500 mt-2">⭐⭐⭐⭐⭐</div>
+                    <button onclick="redirectToPayment('Spider Plant', 1450)" class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+                        Buy Now
+                    </button>
+
+                    <!-- 🔹 Pop-up on hover -->
+                    <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-48 bg-green-600 text-white text-sm text-center p-2 rounded-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        The Spider Plant is great for beginners and purifies air effectively!
+                    </div>
+                </div>
+
+
+            
+             <!-- Product 5 -->
+                <div class="relative bg-white p-4 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:bg-green-100 hover:shadow-lg group">
+                    <img src="images/image1.jpg" class="w-full h-48 object-cover rounded-lg">
+                    <h3 class="text-lg font-semibold mt-4">Fiddle Leaf Fig</h3>
+                    <p class="text-green-600 font-bold">Rs.1200</p>
+                    <div class="text-yellow-500 mt-2">⭐⭐⭐⭐☆</div>
+                    <button onclick="redirectToPayment('Fiddle Leaf Fig', 1200)" class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+                        Buy Now
+                    </button>
+
+                    <!-- 🔹 Pop-up on hover -->
+                    <div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-48 bg-green-600 text-white text-sm text-center p-2 rounded-lg opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        Fiddle Leaf Fig is known for its glossy leaves and air-purifying properties!
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+      <!-- ✅ FOOTER -->
+      <footer class="bg-green-700 text-white text-center py-4 mt-12">
+        <p>&copy; 2025 Plant Haven. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function redirectToPayment(productName, price) {
+            const encodedName = encodeURIComponent(productName);
+            window.location.href = `paymentpage.html?name=${encodedName}&price=${price}`;
+        }
+    </script>
+        

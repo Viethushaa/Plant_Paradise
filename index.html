@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Paradise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @keyframes slideFromRight {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-slideRight {
+            animation: slideFromRight 1.5s ease-out forwards;
+        }
+    </style>
+
+</head>
+<body class="bg-green-100">
+
+    <!-- ✅ HEADER & NAVIGATION -->
+    <header class="bg-green-600 text-white">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Plant Paradise</h1>
+            <nav class="hidden md:flex space-x-8 bg-gradient-to-r from-green-700 to-green-900 p-4 rounded-lg shadow-lg">
+                <a href="#home" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">Home</a>
+                <a href="shop.html" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">Shop</a>
+                <a href="#about" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">About</a>
+                <a href="#contact" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">Contact</a>
+            </nav>
+            
+                        
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden md:hidden bg-green-700 text-white py-2">
+            <a href="#home" class="block text-center py-2 hover:bg-green-500">Home</a>
+            <a href="shop.html" class="block text-center py-2 hover:bg-green-500">Shop</a>
+            <a href="#about" class="block text-center py-2 hover:bg-green-500">About</a>
+            <a href="#contact" class="block text-center py-2 hover:bg-green-500">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ✅ HERO/BANNER SECTION -->
+    <section id="home" class="relative">
+        <img src="images/homeimage.jpg" class="w-full h-[400px] object-cover">
+        <div class="absolute inset-0 flex items-center justify-center text-white bg-black bg-opacity-50">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold">Bring Nature Home</h1>
+                <p class="mt-4 text-lg">Find the perfect plants for your space.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ WELCOME SECTION -->
+    <section id="about" class="container mx-auto px-6 py-16 text-center bg-[rgba(196,157,108,0.7)] rounded-lg mt-10 opacity-0" data-aos="slide-right">
+        <h2 class="text-4xl font-bold text-green-700">Welcome to Plant Paradise!</h2>
+        <p class="mt-4 text-lg text-gray-700 font-semibold">Step into a world where nature meets elegance. At Plant Paradise, we bring you closer to nature by offering a variety of handpicked plants that add a touch of green to your space and soul.</p>
+        <p class="mt-4 text-lg text-gray-700">Whether you're looking to brighten up your home, office, or garden, our stunning collection of plants is curated to suit all your needs. Let us help you transform any environment into a lush, tranquil paradise.</p>
+    </section>
+
+    <!-- ✅ WHY CHOOSE US SECTION -->
+    <section class="container mx-auto px-6 py-16 text-center mt-10">
+        <h3 class="text-3xl font-semibold text-green-600">Why Choose Us?</h3>
+        <div class="grid md:grid-cols-3 gap-8 mt-8">
+            <div class="bg-white p-6 shadow-lg rounded-lg hover:bg-[#3e1a00] hover:text-white hover:font-bold transform hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
+                <img src="images/image6.jpg" alt="High-quality plants" class="w-full h-40 object-cover rounded-md mb-4">
+                <h4 class="text-xl font-semibold text-green-600">High-Quality Plants</h4>
+                <p class="text-white-700 mt-2">Our plants are carefully selected to ensure that you get the best quality, whether you're buying indoor or outdoor varieties.</p>
+            </div>
+            
+            <div class="bg-white p-6 shadow-lg rounded-lg hover:bg-[#3e1a00] hover:text-white hover:font-bold transform hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
+                <img src="images/image7.jpg" alt="Expert advice" class="w-full h-40 object-cover rounded-md mb-4">
+                <h4 class="text-xl font-semibold text-green-600">Expert Advice</h4>
+                <p class="text-white-700 mt-2">Get personalized guidance from plant experts who can help you choose the perfect plant and care for it in your home or office.</p>
+            </div>
+            
+            <div class="bg-white p-6 shadow-lg rounded-lg hover:bg-[#3e1a00] hover:text-white hover:font-bold transform hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
+                <img src="images/image8.jpg" alt="Eco-friendly packaging" class="w-full h-40 object-cover rounded-md mb-4">
+                <h4 class="text-xl font-semibold text-green-600">Eco-Friendly Packaging</h4>
+                <p class="text-white-700 mt-2">We care about the environment. That's why we use sustainable, eco-friendly packaging to protect your plants during shipping.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ✅ FOOTER -->
+    <footer class="bg-green-700 text-white text-center py-4">
+        <p>&copy; 2025 Plant Paradise. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+
+        
+        // Function to check if an element is in the viewport
+        function isElementInView(el) {
+            const rect = el.getBoundingClientRect();
+            return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+        }
+
+        // Add event listener for scroll
+        window.addEventListener('scroll', () => {
+            const aboutSection = document.getElementById('about');
+            
+            // Check if the section is in the viewport
+            if (isElementInView(aboutSection)) {
+                aboutSection.classList.add('animate-slideRight');
+            }
+        });
+
+    </script>
+</body>
+</html>
