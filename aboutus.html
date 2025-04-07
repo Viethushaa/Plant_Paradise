@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Plant Paradise</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- ✅ HEADER & NAVIGATION -->
+    <header class="bg-green-600 text-white">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Plant Paradise</h1>
+            <nav class="hidden md:flex space-x-8 bg-gradient-to-r from-green-700 to-green-900 p-4 rounded-lg shadow-lg">
+                <a href="index.html" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">Home</a>
+                <a href="shop.html" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">Shop</a>
+                <a href="aboutus.html" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">About</a>
+                <a href="ContactUs.html" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">Contact</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden md:hidden bg-green-700 text-white py-2">
+            <a href="index.html" class="block text-center py-2 hover:bg-green-500">Home</a>
+            <a href="shop.html" class="block text-center py-2 hover:bg-green-500">Shop</a>
+            <a href="aboutus.html" class="block text-center py-2 hover:bg-green-500">About</a>
+            <a href="#contact" class="block text-center py-2 hover:bg-green-500">Contact</a>
+        </nav>
+    </header>
+
+  <!-- ✅ ABOUT US SECTION -->
+        <section class="container mx-auto px-6 py-16">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold text-green-700">About Us</h2>
+            <p class="mt-4 text-lg text-gray-700">At <span class="font-semibold">Plant Paradise</span>, we have over 10 years of experience in bringing the best quality plants to homes and businesses across the country. With our commitment to sustainability and customer satisfaction, we’ve grown to have multiple branches nationwide, offering a wide variety of plants and gardening services.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10 mt-10 items-center">
+            <img src="images/team1.jpg" alt="Our Story" class="rounded-lg shadow-lg w-full h-80 object-cover">
+            <div>
+                <h3 class="text-2xl font-semibold text-green-800 mb-4">Our Green Mission</h3>
+                <p class="text-gray-700 mb-4">We source our plants responsibly, ensuring every leaf, petal, and root arrives at your doorstep healthy and happy. From indoor foliage to outdoor blooms, our range is curated to elevate your space and improve well-being.</p>
+                <p class="text-gray-700">We're not just about selling plants—we're about building a community of plant lovers, offering tips, tricks, and personalized care advice every step of the way.</p>
+            </div>
+        </div>
+        </section>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-left">
+            <!-- Years of Experience (Card) -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 hover:shadow-xl hover:bg-[#d8b49b] transition-all duration-300 ease-in-out group">
+                <img src="images/aboutus3.webp" alt="Experience Image" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold text-green-600 mb-3">Our Experience</h3>
+                <p class="text-gray-700">With over a decade of experience in the industry, we have become a trusted name in providing quality plants and gardening products. Our knowledgeable team is dedicated to offering you the best solutions for all your green needs.</p>
+            </div>
+
+            <!-- Middle Card (Customized) -->
+            <div class="bg-yellow-100 shadow-lg rounded-lg p-6 transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl relative">
+                <!-- Special Badge or Icon for Highlight -->
+                <span class="absolute top-2 right-2 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">Featured</span>
+                <img src="images/aboutus2.webp" alt="Branches Image" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold text-green-600 mb-3">Our Branches</h3>
+                <p class="text-gray-700">We are proud to have several branches located in major cities nationwide, including Colombo, Kandy, and Galle. Our central distribution hub ensures quick delivery to all regions.</p>
+            </div>
+
+            <!-- Services (Card) -->
+            <div class="bg-white shadow-lg rounded-lg p-6 transform hover:scale-105 hover:shadow-xl hover:bg-[#d8b49b] transition-all duration-300 ease-in-out group">
+                <img src="images/about1.png" alt="Services Image" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold text-green-600 mb-3">Our Services</h3>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li>Plant Sales - Indoor & Outdoor</li>
+                    <li>Custom Gardening Solutions</li>
+                    <li>Plant Delivery Services</li>
+                    <li>Expert Consultation and Advice</li>
+                    <li>Gift Plant Packages</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+
+ <!-- Meet the Team -->
+<section class="bg-[rgba(196,157,108,0.7)] py-16">
+    <div class="container mx-auto text-center">
+        <h3 class="text-3xl font-bold text-green-800 mb-10">Meet Our Team</h3>
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <img src="images/member1.webp" alt="Founder" class="rounded-lg w-full h-80 object-cover mb-4">
+                <h4 class="text-xl font-semibold text-green-700">Samantha Leaf</h4>
+                <p class="text-gray-600">Founder & Plant Enthusiast</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <img src="images/member2.avif" alt="Botanist" class="rounded-lg w-full h-80 object-cover mb-4">
+                <h4 class="text-xl font-semibold text-green-700">Daniel Bloom</h4>
+                <p class="text-gray-600">Lead Botanist</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <img src="images/member3.webp" alt="Support" class="rounded-lg w-full h-80 object-cover mb-4">
+                <h4 class="text-xl font-semibold text-green-700">Lena Moss</h4>
+                <p class="text-gray-600">Customer Care</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- ✅ FOOTER -->
+    <footer class="bg-green-700 text-white text-center py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+            
+            <!-- Company Info -->
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Plant Paradise 🌿</h2>
+                <p>Your one-stop shop for healthy, beautiful, air-purifying plants delivered to your door.</p>
+            </div>
+    
+            <!-- Navigation Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-green-300">Home</a></li>
+                    <li><a href="#" class="hover:text-green-300">Shop</a></li>
+                    <li><a href="#" class="hover:text-green-300">About Us</a></li>
+                    <li><a href="#" class="hover:text-green-300">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                <ul class="space-y-2">
+                    <li><i class="fas fa-map-marker-alt mr-2"></i>123 Green Lane, Nature City</li>
+                    <li><i class="fas fa-envelope mr-2"></i>support@plantparadise.com</li>
+                    <li><i class="fas fa-phone mr-2"></i>+94 77 123 4567</li>
+                </ul>
+            </div>
+            
+        </div>
+    
+        <div class="mt-8 flex justify-center space-x-6">
+            <!-- Social Media Icons -->
+            <a href="#" class="text-white hover:text-green-300 text-2xl">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-white hover:text-green-300 text-2xl">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-white hover:text-green-300 text-2xl">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-white hover:text-green-300 text-2xl">
+                <i class="fab fa-pinterest-p"></i>
+            </a>
+        </div>
+    
+        <div class="border-t border-green-600 mt-10 pt-4 text-xs">
+            &copy; 2025 Plant Paradise. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

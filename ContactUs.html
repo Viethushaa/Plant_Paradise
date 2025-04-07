@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Plant Paradise</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50 text-gray-900">
+    <!-- ✅ HEADER & NAVIGATION -->
+    <header class="bg-green-600 text-white">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Plant Paradise</h1>
+            <nav class="hidden md:flex space-x-8 bg-gradient-to-r from-green-700 to-green-900 p-4 rounded-lg shadow-lg">
+                <a href="index.html" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">Home</a>
+                <a href="shop.html" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">Shop</a>
+                <a href="aboutus.html" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">About</a>
+                <a href="ContactUs.html" class="text-white text-lg font-semibold hover:text-yellow-300 transition duration-300 ease-in-out">Contact</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="hidden md:hidden bg-green-700 text-white py-2">
+            <a href="index.html" class="block text-center py-2 hover:bg-green-500">Home</a>
+            <a href="shop.html" class="block text-center py-2 hover:bg-green-500">Shop</a>
+            <a href="aboutus.html" class="block text-center py-2 hover:bg-green-500">About</a>
+            <a href="#contact" class="block text-center py-2 hover:bg-green-500">Contact</a>
+        </nav>
+    </header>
+
+  <section class="bg-white py-16 px-6 md:px-20">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-start">
+      
+      <!-- Left: Info -->
+      <div class="flex-1">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-green-800">
+          Get in Touch with Plant Paradise
+        </h2>
+        <p class="text-lg mb-4">
+          Whether you’re curious about our plant collection, need care tips, or want to place a custom order — we’re ready to answer all your questions.
+        </p>
+        <p class="text-md mb-6">
+          We usually respond within <strong>24 hours</strong>.
+        </p>
+
+        <ul class="space-y-4">
+          <li class="flex items-center">
+            <span class="text-green-500 text-2xl mr-3">🌱</span>
+            Personalized Plant Recommendations
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-500 text-2xl mr-3">📦</span>
+            Fast & Eco-friendly Delivery
+          </li>
+          <li class="flex items-center">
+            <span class="text-green-500 text-2xl mr-3">💬</span>
+            Expert Gardening Support
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="flex-1 bg-green-100 rounded-2xl p-8 shadow-md">
+        <h3 class="text-xl mb-6 text-green-900">
+          Send us a message and we'll get back to you!
+        </h3>
+
+        <form class="space-y-4">
+          <input type="text" placeholder="Full Name" class="w-full p-3 bg-white text-gray-900 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400">
+          <input type="email" placeholder="Email Address" class="w-full p-3 bg-white text-gray-900 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400">
+          <input type="text" placeholder="Subject" class="w-full p-3 bg-white text-gray-900 border border-green-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-400">
+          <textarea placeholder="Your Message..." class="w-full p-3 bg-white text-gray-900 border border-green-300 rounded-md h-32 resize-none focus:outline-none focus:ring-2 focus:ring-green-400"></textarea>
+          <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-md transition duration-200">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="text-center py-12">
+    <button class="border-2 border-black-400 text-green-400 px-4 py-1 rounded-full mb-4 hover:bg-green-400 hover:text-black font-bold transition">
+      Prefer to speak directly?
+    </button>
+    <h1 class="text-4xl md:text-5xl font-bold">Schedule a Call</h1>
+    <p class="mt-4 text-blak-300 text-lg">
+      Book a 30-minute plant consultation with our experts to find the perfect greenery for your space.
+    </p>
+  </section>
+
+   <!-- Booking Section -->
+   <section class="max-w-6xl mx-auto bg-white text-gray-900 rounded-2xl shadow-md p-6 md:p-12 flex flex-col md:flex-row gap-10 mb-16">
+
+    <!-- Left Panel: Expert Info -->
+    <div class="flex-1 space-y-6">
+      <div class="flex items-center gap-4">
+        <img src="https://i.pravatar.cc/100" alt="Expert" class="w-16 h-16 rounded-full" />
+        <div>
+          <p class="text-sm text-gray-600">Plant Specialist</p>
+          <h2 class="text-xl font-semibold text-green-800">Greeny Leafer</h2>
+        </div>
+      </div>
+
+      <h3 class="text-2xl font-bold text-green-900">30 Minute Consultation</h3>
+
+      <p class="flex items-center text-gray-600 text-sm">
+        ⏱️ 30 min
+
+    </p>
+    <p class="flex items-center text-gray-600 text-sm">
+      📹 Web conferencing details provided upon confirmation.
+    </p>
+  </div>
+  <!-- Right Panel: Calendar & Time Picker -->
+  <div class="flex-1">
+    <h4 class="text-xl font-semibold mb-4 text-green-900">Select a Date & Time</h4>
+
+    <!-- Month Selector -->
+    <div class="flex items-center justify-between mb-4">
+      <button class="text-gray-500 hover:text-green-600">&lt;</button>
+      <p class="text-md font-semibold">April 2025</p>
+      <button class="text-gray-500 hover:text-green-600">&gt;</button>
+    </div>
+
+    <!-- Weekdays -->
+    <div class="grid grid-cols-7 gap-2 text-center text-sm text-gray-600 mb-2">
+        <span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span>
+      </div>
+
+      <!-- Dates -->
+     <!-- Calendar Days -->
+<div class="grid grid-cols-7 gap-2 mb-4 text-center">
+
+    <!-- Week 1 -->
+    <div></div> <!-- Monday -->
+    <div></div> <!-- Tuesday -->
+    <div class="bg-gray-200 rounded-full py-2">1</div>
+    <div class="bg-gray-200 rounded-full py-2">2</div>
+    <div class="bg-gray-200 rounded-full py-2">3</div>
+    <div class="bg-green-600 text-white rounded-full py-2 cursor-pointer">4</div>
+    <div class="bg-gray-200 rounded-full py-2">5</div>
+  
+    <!-- Week 2 -->
+    <div class="bg-gray-200 rounded-full py-2">6</div>
+    <div class="bg-gray-200 rounded-full py-2">7</div>
+    <div class="bg-gray-200 rounded-full py-2">8</div>
+    <div class="bg-gray-200 rounded-full py-2">9</div>
+    <div class="bg-gray-200 rounded-full py-2">10</div>
+    <div class="bg-gray-200 rounded-full py-2">11</div>
+    <div class="bg-gray-200 rounded-full py-2">12</div>
+  
+    <!-- Week 3 -->
+    <div class="bg-gray-200 rounded-full py-2">13</div>
+    <div class="bg-gray-200 rounded-full py-2">14</div>
+    <div class="bg-gray-200 rounded-full py-2">15</div>
+    <div class="bg-gray-200 rounded-full py-2">16</div>
+    <div class="bg-gray-200 rounded-full py-2">17</div>
+    <div class="bg-gray-200 rounded-full py-2">18</div>
+    <div class="bg-gray-200 rounded-full py-2">19</div>
+  
+    <!-- Week 4 -->
+    <div class="bg-gray-200 rounded-full py-2">20</div>
+    <div class="bg-gray-200 rounded-full py-2">21</div>
+    <div class="bg-gray-200 rounded-full py-2">22</div>
+    <div class="bg-gray-200 rounded-full py-2">23</div>
+    <div class="bg-gray-200 rounded-full py-2">24</div>
+    <div class="bg-gray-200 rounded-full py-2">25</div>
+    <div class="bg-gray-200 rounded-full py-2">26</div>
+  
+    <!-- Week 5 -->
+    <div class="bg-gray-200 rounded-full py-2">27</div>
+    <div class="bg-gray-200 rounded-full py-2">28</div>
+    <div class="bg-gray-200 rounded-full py-2">29</div>
+    <div class="bg-gray-200 rounded-full py-2">30</div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  
+
+      <!-- Time Slots -->
+      <div class="mt-6">
+        <h5 class="text-md font-medium mb-2 text-green-800">Available Times</h5>
+        <div class="flex flex-wrap gap-3">
+          <button class="bg-green-100 text-green-800 px-4 py-2 rounded-md hover:bg-green-200">10:00 AM</button>
+          <button class="bg-green-100 text-green-800 px-4 py-2 rounded-md hover:bg-green-200">1:30 PM</button>
+          <button class="bg-green-100 text-green-800 px-4 py-2 rounded-md hover:bg-green-200">4:00 PM</button>
+          <button class="bg-green-100 text-green-800 px-4 py-2 rounded-md hover:bg-green-200">6:30 PM</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+   <!-- ✅ FOOTER -->
+   <footer class="bg-green-700 text-white text-center py-8 mt-12">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        
+        <!-- Company Info -->
+        <div>
+            <h2 class="text-2xl font-bold mb-4">Plant Paradise 🌿</h2>
+            <p>Your one-stop shop for healthy, beautiful, air-purifying plants delivered to your door.</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:text-green-300">Home</a></li>
+                <li><a href="#" class="hover:text-green-300">Shop</a></li>
+                <li><a href="#" class="hover:text-green-300">About Us</a></li>
+                <li><a href="#" class="hover:text-green-300">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+            <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+            <ul class="space-y-2">
+                <li><i class="fas fa-map-marker-alt mr-2"></i>123 Green Lane, Nature City</li>
+                <li><i class="fas fa-envelope mr-2"></i>support@plantparadise.com</li>
+                <li><i class="fas fa-phone mr-2"></i>+94 77 123 4567</li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <div class="mt-8 flex justify-center space-x-6">
+        <!-- Social Media Icons -->
+        <a href="#" class="text-white hover:text-green-300 text-2xl">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="text-white hover:text-green-300 text-2xl">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-white hover:text-green-300 text-2xl">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-white hover:text-green-300 text-2xl">
+            <i class="fab fa-pinterest-p"></i>
+        </a>
+    </div>
+
+    <div class="border-t border-green-600 mt-10 pt-4 text-xs">
+        &copy; 2025 Plant Paradise. All rights reserved.
+    </div>
+</footer>
+
+
+</body>
+</html>
